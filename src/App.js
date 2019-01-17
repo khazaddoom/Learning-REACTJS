@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import NameComponent from './components/NameComponent'
 import './App.css';
 
 class App extends Component {
@@ -18,8 +18,9 @@ class App extends Component {
 
     return (
       <div className="App" style = {divStyle}>
-          Welcome to my very first React App!
+         <NameComponent />
       </div>
+   
     );
   }
 }
