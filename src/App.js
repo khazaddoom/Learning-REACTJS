@@ -4,22 +4,21 @@ import './App.css';
 
 class App extends Component {
   render() {
+
+    var divStyle = {
+      fontFamily : 'Calibri',
+      fontSize : '10em',
+      fontStyle: 'italic',
+      color : 'red',
+      border: '2px solid lime',
+      margin: '100px',
+      padding: '0px'
+    };
+    
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="App" style = {divStyle}>
+          Welcome to my very first React App!
       </div>
     );
   }
