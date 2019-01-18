@@ -4,6 +4,11 @@ import React, { Component } from 'react';
 
 class App extends Component {
 
+
+  clicked() {
+    console.log("Clicked")
+  }
+
   render() {
 
     // var divStyle = {
@@ -28,9 +33,14 @@ class App extends Component {
     });
 
     return (
-      <div >
-        {toShow}
-      </div>
+      
+      // <button onClick = {() => {
+
+      //   console.log("You clicked!")
+
+      // }}>Press me...</button>
+
+      <button onClick = {this.clicked}>Press me...</button>
    
     );
 
