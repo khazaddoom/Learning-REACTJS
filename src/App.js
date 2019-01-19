@@ -4,9 +4,16 @@ import React, { Component } from 'react';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      date : new Date()
+    };
+  }
+
 
   clicked() {
-    console.log("Clicked")
+    console.log(this.state.date.toLocaleTimeString());
   }
 
   render() {
@@ -21,16 +28,16 @@ class App extends Component {
     //   padding: '0px'
     // };
 
-    var welcomeMessage = ["Welcome", "to", "my", "new", "world!"];
-    var toShow = [];
+    // var welcomeMessage = ["Welcome", "to", "my", "new", "world!"];
+    // var toShow = [];
     
-    welcomeMessage.forEach((word) => {
+    // welcomeMessage.forEach((word) => {
 
-      toShow.push(
-        <p>{word}</p>
-      );
+    //   toShow.push(
+    //     <p>{word}</p>
+    //   );
 
-    });
+    // });
 
     return (
       
@@ -40,7 +47,7 @@ class App extends Component {
 
       // }}>Press me...</button>
 
-      <button onClick = {this.clicked}>Press me...</button>
+      <p>{this.state.date.toLocaleTimeString()}</p>
    
     );
 
